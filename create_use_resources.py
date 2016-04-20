@@ -69,15 +69,18 @@ class Resource():
         """print list of resource currently on the board"""
         print(self.total_supply)
 
+"""some tests for the resource class  need to separate into two files"""
+
+
 
 total_supply_coal = 27
 start_supply_coal = (2, 9)
-# total_supply_gas = 24
-# start_supply_gas = (3, 8)
-# total_supply_oil = 20
-# start_supply_oil = (3, 9)
-# total_supply_uranium = 12
-# start_supply_uranium = (8, 9)
+total_supply_gas = 24
+start_supply_gas = (3, 8)
+total_supply_oil = 20
+start_supply_oil = (3, 9)
+total_supply_uranium = 12
+start_supply_uranium = (8, 9)
 
 
 
@@ -93,12 +96,12 @@ uranium_cl = [[1, [0, 0, 0, 0]], [2, [0, 0, 0, 0]], [3, [0, 0, 0, 0]], [4, [0, 0
 
 coal = Resource(total_supply_coal, start_supply_coal, coal_cl)
 coal.initialize_supply()
-# gas = Resource(total_supply_gas, start_supply_gas, gas_cl)
-# gas.initialize_supply()
-# oil = Resource(total_supply_oil, start_supply_oil, oil_cl)
-# oil.initialize_supply()
-# uranium = Resource(total_supply_uranium, start_supply_uranium, uranium_cl)
-# uranium.initialize_supply()
+gas = Resource(total_supply_gas, start_supply_gas, gas_cl)
+gas.initialize_supply()
+oil = Resource(total_supply_oil, start_supply_oil, oil_cl)
+oil.initialize_supply()
+uranium = Resource(total_supply_uranium, start_supply_uranium, uranium_cl)
+uranium.initialize_supply()
 
 print('total resource supply')
 coal.show_supply()
@@ -108,9 +111,9 @@ coal.show_supply()
 print('purchase resource')
 print(coal.poss_purchases())
 print(coal.buy_resource(12))
-# oil.show_board()
-# gas.show_board()
-# uranium.show_board()
+oil.show_board()
+gas.show_board()
+uranium.show_board()
 print('board after purchase')
 coal.show_board()
 print('use resource')
