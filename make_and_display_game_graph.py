@@ -92,7 +92,7 @@ label_dictionary = create_label_dict(city_nodes)
 #print(label_dictionary)
 
 edge_labels = create_edge_labels(game_board)
-print(edge_labels)
+#print(edge_labels)
 
 G=nx.Graph()
 # explicitly set positions
